@@ -23,7 +23,7 @@ jobs:
     - name: Run Playwright tests
       run: npx playwright test
     - name: Not on Monday or Wednesday
-      if: github.event.schedule != '0 4,5,6 * * *'
+      if: github.event.schedule == '0 4,5,6 * * *'
       run: echo "This step will be skipped if not 4,5,6"
     - name: Every time
       run: echo "This step will always run"
