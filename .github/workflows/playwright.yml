@@ -7,6 +7,8 @@ on:
   schedule:
     - cron: "0 4,5,6 * * *"
     - cron: "*/10 * * * *"
+  workflow_dispatch:
+
 jobs:
   test:
     timeout-minutes: 60
